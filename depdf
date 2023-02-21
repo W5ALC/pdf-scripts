@@ -1,0 +1,7 @@
+#!/bin/bash
+for file in $(find . -iname "*.pdf")
+do
+	    printf "$file\n"
+	bash repdf "$1" "$file" "$2"
+done
+fi
