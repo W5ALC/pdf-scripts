@@ -21,8 +21,8 @@ fi
 
 # for centos
 if [ -f /etc/redhat-release ]; then
-  echo "not yet implemented"
-  exit 1
+  command_exists dnf
+  sudo dnf install parallel.noarch ghostscript.x86_64 mupdf-devel.x86_64 qpdf.x86_64 poppler.x86_64 detox.x86_64 perl-Image-ExifTool.noarch ImageMagick.x86_64 ImageMagick-devel.x86_64 
 fi
 
 # for ubuntu
